@@ -28,7 +28,7 @@ const CardSection = () => {
       className=" bg-gradient-to-b from-blue-50 to-white flex  gap-4 mt-32 md:mt-20 
     "
     >
-      <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 mx-10 my-10">
+      <div className="flex flex-col items-center justify-center m-auto md:flex-row lg:flex-row gap-4 md:gap-8  my-10">
         {cards.map((i, key) => (
           <Card
             key={key}
