@@ -22,7 +22,7 @@ export const authOptions: NextAuthOptions = {
                 try {
                     const { email, password }: LoginCredentials = credentials || {};
                     const res = await fetch(
-                        `${process.env.NEXT_API_URL}api/auth/login`, {
+                        `${process.env.NEXT_PUBLIC_API_URL}api/auth/login`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
@@ -35,8 +35,7 @@ export const authOptions: NextAuthOptions = {
                     );
                     const resBody = await res.json();
 
-
-                    return resBody.session.User;
+                    return resBody.data.user;
 
                 } catch (error: any) {
                     console.error(error);
@@ -47,18 +46,25 @@ export const authOptions: NextAuthOptions = {
         }),
     ],
     callbacks: {
+        async jwt({ token, user }) {
+            if (user) {
+                token.id = user.id;
+                token.email = user.email;
+                token.username = (user as any).username;
+                token.is_verified = (user as any).is_verified;
+                token.auth = (user as any).token.Authorization
+            }
 
-        async session({ session, token, user }) {
-            console.log({ token })
-            session.user = user;
+            return token as JWT;
+        },
+        async session({ session, token }) {
+
+            if (token) {
+                session.user = token;
+            }
             return session;
         },
-        async jwt({ token, session }) {
-            if (session) {
-                token = { ...token, ...session };
-            }
-            return token as JWT;
-        }
+
 
 
     }
