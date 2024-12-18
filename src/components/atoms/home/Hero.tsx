@@ -5,17 +5,17 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="container flex items-center w-full px-6 mx-auto flex-col md:flex-row lg:flex-row gap-24 md:gap-0
+      className="container flex items-center w-full px-6 mx-auto flex-col md:flex-row lg:flex-row gap-28 md:gap-0
      "
     >
       <div className="md:w-[50%] w-full  ">
-        <div className=" ">
-          <div className="text-5xl md:text-5xl xl:text-[4rem] font-extrabold pt-6 md:pt-16 flex flex-col gap-3 ">
+        <div className="text-center md:text-left ">
+          <div className="text-5xl md:text-5xl xl:text-[4rem] font-extrabold pt-6 md:pt-16 flex flex-col gap-3  ">
             <h1 className="flex ">Building Apps </h1>
             <h1>Just Got Easier</h1>
           </div>
 
-          <p className="text-base  pt-4">
+          <p className="text-base  pt-4  pb-6 md:pb-0">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
             id aperiam voluptatem perferendis voluptates voluptate deleniti
             accusantium sequi similique porro maiores molestias hic consequuntur
@@ -23,10 +23,6 @@ const Hero = () => {
             Consectetur officia nam animi totam fuga, maxime sint ipsa
             perspiciatis, labore harum, laborum autem soluta hic!
           </p>
-
-          <div className="my-4">
-            <ButtonLink name={"Get started"} url={"/login"} />
-          </div>
         </div>
       </div>
       <div className="w-[50%]  ">
