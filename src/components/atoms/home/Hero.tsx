@@ -40,8 +40,8 @@ const Hero = () => {
             height={1920}
             src={"/iPhone.png"}
             alt="phone"
-            className="absolute h-72 w-52 md:h-96
-             md:w-52"
+            className="absolute z-50 h-96
+             w-52"
           />
         </div>
       </div>
