@@ -8,44 +8,49 @@ import Image from "next/image";
 
 import React from "react";
 
-const Tools = () => {
+const Focus = () => {
   const acc = [
     {
-      title: "Link Management",
+      title: "Prioritize Important Links",
       description:
-        "Easily add, edit, and organize your links with a user-friendly interface.",
+        "Easily categorize and prioritize links that matter most to you, ensuring quick access to what’s essential.",
     },
     {
-      title: "Link Categories",
+      title: "Clutter-Free Interface",
       description:
-        "Group your links into categories for better organization and easy navigation.",
+        "A clean and minimalistic design that removes distractions and allows you to focus on managing your most important links.",
     },
     {
-      title: "Search Functionality",
+      title: "Smart Search Filters",
       description:
-        "Quickly find any link using the search bar, no matter how many links you have stored.",
+        "Find the links that are truly important with smart filters and search options, helping you save time and focus on key resources.",
     },
     {
-      title: "Analytics",
+      title: "Personalized Link Recommendations",
       description:
-        "Track the performance of your links and see how often they're clicked.",
+        "Get personalized link suggestions based on your activity, helping you focus on links you may need more often.",
     },
     {
-      title: "Secure Storage",
+      title: "Quick Access Shortcuts",
       description:
-        "Keep all your links safe with encrypted storage and secure access.",
+        "Create custom shortcuts to your most important links, allowing faster access to the content that truly matters.",
     },
     {
-      title: "Mobile-Friendly",
+      title: "Link Prioritization Tags",
       description:
-        "Access your links easily on any device, with a responsive design that works on both desktop and mobile.",
+        "Tag links with priority levels to keep your focus on what’s most urgent or important.",
+    },
+    {
+      title: "Remove Unnecessary Links",
+      description:
+        "Effortlessly delete or archive outdated or irrelevant links to reduce clutter and keep your collection streamlined.",
     },
   ];
   return (
-    <div className=" px-14">
+    <div className="px-14">
       <div className="flex w-full flex-col ">
         <div className="flex  flex-col gap-6 items-center justify-center">
-          <h1 className="font-extrabold text-4xl ">All the essential Tools</h1>
+          <h1 className="font-extrabold text-4xl ">Focus On What Matters</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eius?
           </p>
@@ -53,7 +58,7 @@ const Tools = () => {
         <div className="flex flex-col md:flex-row md:justify-between justify-center  py-14 md:px-14 w-full ">
           <div className="md:w-[50%] w-full flex justify-center items-center">
             <Image
-              src={"/Col.png"}
+              src={"/col2.png"}
               width={1920}
               height={1080}
               alt="col-png"
@@ -86,4 +91,4 @@ const Tools = () => {
   );
 };
 
-export default Tools;
+export default Focus;
