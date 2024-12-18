@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ButtonLink from "./ButtonLink";
 
 const Navbar = () => {
   return (
@@ -9,16 +10,11 @@ const Navbar = () => {
         <Link
           href={"/login"}
           className="border-white text-blue-700
-           font-semibold "
+           text-sm font-semibold"
         >
           Log in
         </Link>
-        <Link
-          href={"/login"}
-          className="m-2 bg-blue-700 rounded-md text-white p-2 font-medium"
-        >
-          Get Started
-        </Link>
+        <ButtonLink name={"Get started"} url={"/login"} />
       </div>
     </div>
   );
