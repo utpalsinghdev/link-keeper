@@ -9,8 +9,8 @@ const Navbar = () => {
       <div>
         <Link
           href={"/login"}
-          className="border-white text-blue-700
-           text-sm font-semibold"
+          className=" text-blue-700
+           text-sm font-semibold mx-2"
         >
           Log in
         </Link>
