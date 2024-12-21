@@ -1,20 +1,31 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { GalleryVerticalEnd } from "lucide-react";
 import React from "react";
 
-const Card = () => {
+const Card = ({ color, face, des, title }: any) => {
   return (
-    <div className="border border-gray-300 p-5 cursor-pointer rounded-md flex flex-col items-center justify-center">
-      <div className="flex justify-center items-center border rounded-full w-max border-dashed border-red-600 ">
-        <div className="bg-red-600 ml-[3px] mt-[3px] p-5 w-max rounded-full flex items-center justify-center">
-          <GalleryVerticalEnd />
+    <div className=" p-5 cursor-pointer rounded-md flex flex-col items-center justify-center">
+      <div
+        style={{
+          border: `1px dashed ${color}`,
+        }}
+        className="flex justify-center items-center  rounded-full w-max  "
+      >
+        <div
+          style={{
+            backgroundColor: `${color}`,
+          }}
+          className={`p-5 ${
+            face === "left" ? "mr-[3px]" : "ml-[3px]"
+          } w-max mt-[3px] rounded-full flex items-center justify-center`}
+        >
+          <GalleryVerticalEnd className="text-white" />
         </div>
       </div>
       <div className="flex-col items-start gap-5 text-3xl md:text-4xl xl:text-5xl">
-        <h1>Joe done</h1>
+        <h1 className="font-bold text-lg">{title}</h1>
       </div>
-      <p className="">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, aliquam!
-      </p>
+      <p className="text-sm text-center text-gray-700">{des}</p>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import ButtonLink from "./ButtonLink";
 const Navbar = () => {
   return (
     <div className="container mt-2 mx-auto flex justify-between items-center p-4">
-      <div className="text-blue-800 text-2xl font-bold">Link-Keeper</div>
+      <div className="text-blue-800 text-4xl font-bold">Link-Keeper</div>
       <div>
         <Link
           href={"/login"}
