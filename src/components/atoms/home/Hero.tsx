@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="md:w-[50%] w-full  ">
         <div className="text-center md:text-left flex flex-col gap-3 ">
-          <div className="text-[3rem] md:text-[5rem] xl:text-[7rem]  font-extrabold pt-6 md:pt-16 flex flex-col gap-3 leading-snug ">
+          <div className="text-[3rem] md:text-[5rem] xl:text-[7rem]  font-extrabold pt-6 md:pt-16 flex flex-col gap-3 leading-[1.2] ">
             <h1 className="flex ">Building Apps Just Got Easier</h1>
           </div>
 
