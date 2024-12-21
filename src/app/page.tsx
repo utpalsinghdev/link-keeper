@@ -4,7 +4,7 @@ import Footer from "@/components/atoms/home/Footer";
 import Hero from "@/components/atoms/home/Hero";
 import Navbar from "@/components/atoms/home/Navbar";
 import StartNow from "@/components/atoms/home/StartNow";
-// import Testimonials from "@/components/atoms/home/Testimonials";
+import Testimonials from "@/components/atoms/home/Testimonials";
 import Tools from "@/components/atoms/home/Tools";
 
 import React from "react";
@@ -19,7 +19,7 @@ const Home = () => {
       <Focus />
       <StartNow />
       <Footer />
-      {/* <Testimonials /> */}
+      <Testimonials />
     </div>
   );
 };
