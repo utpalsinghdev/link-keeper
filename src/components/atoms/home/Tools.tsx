@@ -45,8 +45,8 @@ const Tools = () => {
     <div className=" px-14">
       <div className="flex w-full flex-col ">
         <div className="flex  flex-col gap-6 items-center justify-center">
-          <h1 className="font-extrabold text-4xl ">All the essential Tools</h1>
-          <p>
+          <h1 className="font-extrabold text-6xl ">All the essential Tools</h1>
+          <p className="text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eius?
           </p>
         </div>
@@ -57,14 +57,14 @@ const Tools = () => {
               width={1920}
               height={1080}
               alt="col-png"
-              className="h-[30rem] w-max "
+              className="h-[35rem] lg:h-[40rem]  w-max "
             />
           </div>
           <div className="md:w-[50%] px-2 w-full flex items-center justify-center">
             <Accordion
               type="single"
               collapsible
-              className="w-full flex flex-col gap-1"
+              className="w-full  flex flex-col gap-1"
             >
               {acc.map((i, key) => (
                 <AccordionItem

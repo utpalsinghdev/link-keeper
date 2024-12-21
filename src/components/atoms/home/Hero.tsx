@@ -4,12 +4,12 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div
-      className="container flex items-center w-full px-6 mx-auto flex-col md:flex-row lg:flex-row gap-10 md:gap-0
+      className="container flex items-center w-full  mx-auto flex-col md:flex-row lg:flex-row gap-10 md:gap-0
      "
     >
       <div className="md:w-[50%] w-full  ">
         <div className="text-center md:text-left flex flex-col gap-3 ">
-          <div className="text-[3rem] md:text-7xl xl:text-[5rem] font-extrabold pt-6 md:pt-16 flex flex-col gap-3  ">
+          <div className="text-[3rem] md:text-[5rem] xl:text-[7rem]  font-extrabold pt-6 md:pt-16 flex flex-col gap-3 leading-snug ">
             <h1 className="flex ">Building Apps Just Got Easier</h1>
           </div>
 
@@ -30,8 +30,8 @@ const Hero = () => {
             height={1920}
             src={"/iPhone.png"}
             alt="phone"
-            className="h-[30rem]
-             w-max
+            className="h-[40rem] lg:h-[50rem] 
+             w-max md:w[90%]
              "
           />
         </div>

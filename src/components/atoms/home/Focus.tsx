@@ -50,8 +50,8 @@ const Focus = () => {
     <div className="px-14">
       <div className="flex w-full flex-col ">
         <div className="flex  flex-col gap-6 items-center justify-center">
-          <h1 className="font-extrabold text-4xl ">Focus On What Matters</h1>
-          <p>
+          <h1 className="font-extrabold text-6xl ">Focus On What Matters</h1>
+          <p className="text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eius?
           </p>
         </div>
@@ -62,10 +62,10 @@ const Focus = () => {
               width={1920}
               height={1080}
               alt="col-png"
-              className="h-[30rem] w-max "
+              className="h-[35rem] lg:h-[40rem] w-max "
             />
           </div>
-          <div className="md:w-[50%] px-2 w-full flex items-center justify-center">
+          <div className="md:w-[50%] w-50% px-2 w-full flex items-center justify-center text-3xl">
             <Accordion
               type="single"
               collapsible
