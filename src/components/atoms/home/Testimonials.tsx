@@ -34,17 +34,22 @@ const Testimonials = () => {
 
     return (
         <div className="flex bg-blue-400">
-            <Carousel>
+            <Carousel
+                animationHandler={"fade"}
+                autoPlay={true}
+                infiniteLoop={true}
+            >
                 {testimonials.map((testimonial, index) => (
-                    <div key={index}>
+                    <div key={index} className="py-10">
                         <div className="">
-                            <p>{testimonial.message}</p>
+                            <p className="border-l-2 pl-6 italic">&ldquo;{testimonial.message}&rdquo;</p>
                             <p>- {testimonial.author}</p>
                         </div>
                     </div>
-                ))}
-            </Carousel>
-        </div>
+                ))
+                }
+            </Carousel >
+        </div >
     );
 };
 
