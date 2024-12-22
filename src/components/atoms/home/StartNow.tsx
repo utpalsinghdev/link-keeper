@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const StartNow = () => {
   return (
-    <div className="flex bg-blue-100 border-dashed border-2 border-blue-400">
+    <div className="flex bg-blue-100 border-dashed border-t-2 border-blue-400 border-b-2">
       <div
         className="container bg-blue-100 flex items-center w-full px-4 mx-auto flex-col md:flex-row lg:flex-row gap-10 md:gap-0
      "
