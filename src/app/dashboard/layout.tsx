@@ -228,12 +228,12 @@ export default function Dashboard({ children }: { children: React.ReactNode }) {
                                         <Avatar>
                                             <AvatarImage src="https://hackwhiz.com/user.png" alt="@shadcn" />
                                             <AvatarFallback>
-                                                {(session?.user as any)?.username.slice(0, 1).toUpperCase()}
+                                                {session?.user?.username.slice(0, 1).toUpperCase()}
                                             </AvatarFallback>
                                         </Avatar>
                                         <span className="hidden lg:flex lg:items-center">
                                             <span aria-hidden="true" className="ml-4 text-sm/6 font-semibold text-gray-900">
-                                                {(session?.user as any)?.username}
+                                                {session?.user?.username}
                                             </span>
                                             <ChevronDownIcon aria-hidden="true" className="ml-2 size-5 text-gray-400" />
                                         </span>
