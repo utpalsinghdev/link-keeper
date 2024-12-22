@@ -58,13 +58,13 @@ export default function LoginForm() {
                     });
 
                     if (res.ok) {
-                        toast.success('Email verified successfully');
-                        setLoginFromState({ email, password: '' });
+                        toast.success("Email verified. Please login");
                     } else {
-                        toast.error('Verification failed. Please try again');
+                        toast.error("Link expired. or Already verified");
                     }
+
                 } catch (error: any) {
-                    toast.error('An error occurred. Please try again');
+                    toast.error("Link expired. or Already verified");
                 }
             } else {
                 setLoginFromState({ email: '', password: '' });
