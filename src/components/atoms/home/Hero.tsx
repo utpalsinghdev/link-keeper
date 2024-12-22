@@ -13,7 +13,7 @@ const Hero = () => {
             <h1 className="flex ">Building Apps Just Got Easier</h1>
           </div>
 
-          <p className="text-base  pt-4  pb-6 md:pb-0">
+          <p className="text-base italic pt-4  pb-6 md:pb-0">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
             id aperiam voluptatem perferendis voluptates voluptate deleniti
             accusantium sequi similique porro maiores molestias hic consequuntur

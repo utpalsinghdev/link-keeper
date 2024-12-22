@@ -46,7 +46,7 @@ const Tools = () => {
       <div className="flex w-full flex-col ">
         <div className="flex  flex-col gap-6 items-center justify-center">
           <h1 className="font-extrabold text-6xl ">All the essential Tools</h1>
-          <p className="text-xl">
+          <p className="text-xl italic">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eius?
           </p>
         </div>

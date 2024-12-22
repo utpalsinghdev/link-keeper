@@ -14,7 +14,7 @@ const StartNow = () => {
               <h1 className="flex ">Start now and get best services</h1>
             </div>
 
-            <p className="text-base font-semibold px-4  pb-6 md:pb-0">
+            <p className="text-base font-semibold px-4  pb-6 md:pb-0 italic">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
               id aperiam voluptatem perferendis voluptates voluptate deleniti
               accusantium sequi similique porro maiores molestias hic

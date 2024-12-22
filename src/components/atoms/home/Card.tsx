@@ -25,7 +25,7 @@ const Card = ({ color, face, des, title }: any) => {
       <div className="flex-col items-start gap-5 text-3xl md:text-4xl xl:text-5xl">
         <h1 className="font-bold text-lg">{title}</h1>
       </div>
-      <p className="text-sm text-center text-gray-700">{des}</p>
+      <p className="text-sm text-center text-gray-700 italic">{des}</p>
     </div>
   );
 };
